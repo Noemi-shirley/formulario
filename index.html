@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Inscripción Curso</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+<h1>Formulario de Inscripción Curso</h1>
+<p class="subtitle">Rellene cuidadosamente el formulario de inscripción</p>
+<hr>
+
+<form>
+<label>Nombre del alumno</label>
+<div class="row row-3">
+<div><input type="text" required><span class="sub-label">Nombre</span></div>
+<div><input type="text"><span class="sub-label">Segundo Nombre</span></div>
+<div><input type="text" required><span class="sub-label">Apellido</span></div>
+</div>
+
+<div class="row">
+<div>
+<label>Fecha de nacimiento</label>
+<input type="date" required>
+<span class="sub-label">Fecha</span>
+</div>
+<div>
+<label>Género</label>
+<select required>
+<option value=""></option>
+<option>Masculino</option>
+<option>Femenino</option>
+<option>Otro</option>
+<option>Prefiero no decir</option>
+</select>
+</div>
+</div>
+
+<label>Dirección</label>
+<div class="mb">
+<input type="text">
+<span class="sub-label">Dirección de la calle</span>
+</div>
+<div class="mb">
+<input type="text">
+<span class="sub-label">Dirección de la calle Línea 2</span>
+</div>
+
+<div class="row-ciudad">
+<div class="ciudad">
+<input type="text">
+<span class="sub-label">Ciudad</span>
+</div>
+<div class="estado">
+<input type="text">
+<span class="sub-label">Estado / Provincia</span>
+</div>
+</div>
+
+<div class="postal">
+<input type="text">
+<span class="sub-label">Código Postal</span>
+</div>
+
+<div class="row">
+<div>
+<label>Email</label>
+<input type="email" required>
+</div>
+<div>
+<label>Número de teléfono</label>
+<input type="tel">
+</div>
+</div>
+
+<div class="section-title">Ha recibido otros cursos Anteriormente</div>
+<div class="radio-group">
+<label><input type="radio" name="cursos" value="si"> Si</label>
+<label><input type="radio" name="cursos" value="no"> No</label>
+</div>
+
+<div class="row">
+<div>
+<label>Empresa</label>
+<input type="text">
+</div>
+<div>
+<label>Cursos</label>
+<select>
+<option value=""></option>
+<option>Matemáticas</option>
+<option>Programación</option>
+<option>Inglés</option>
+<option>Contabilidad</option>
+<option>Otro</option>
+</select>
+</div>
+</div>
+
+<label>Comentarios adicionales</label>
+<textarea></textarea>
+
+<div class="btn-container">
+<button type="submit">Enviar</button>
+</div>
+</form>
+</div>
+
+</body>
+</html>  
